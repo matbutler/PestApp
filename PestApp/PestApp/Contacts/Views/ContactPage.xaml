@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PestApp.Contacts.Views;assembly=PestApp"
+             x:Class="PestApp.Contacts.Views.ContactPage">
+    
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text="New Visit" Command="{Binding NavigateNewVisitCommand}"/>
+    </TabbedPage.ToolbarItems>
+    
+    <local:ContactDetailPage Title="Details" BindingContext="{Binding DetailPageContext}" />
+    <local:VisitsPage Title="Visits" BindingContext="{Binding VisitPageContext}" />
+</TabbedPage>
